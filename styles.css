@@ -1,0 +1,124 @@
+html, body{
+	margin:0;
+	padding:0;
+	background-color: lightgrey;
+	font-family: Avenir;
+}
+h1{
+	color:red;
+}
+
+hr{
+	width: 80%;
+}
+
+.cover{
+	background-image: url('https://spark.adobe.com/images/landing/preview-wattpad-cover-maker-thumbnail.jpg');
+	position:relative;
+	height: 400px;
+}
+
+.sleeve{
+	position: absolute;
+	bottom: -100px;
+	padding-left: calc(50% - 100px);
+}
+
+.sleeve img{
+	border-radius: 50%;
+	border:white 6px solid;
+	animation:pulse 3s ease infinite;
+}
+.basic-info{
+	padding:20px 20%;
+	padding-top: 100px;
+	text-align: center;
+	background-color:white;
+	
+	margin:0 auto;
+}
+.basic-info p{
+	margin: 0;
+}
+.basic-info p:nth-child(3){
+	font-size: 80%;
+}
+
+.job{
+	margin: 10px;
+	padding: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.7);
+	transition: all 1s ease;
+	background-color:white;
+	cursor: pointer;
+}
+.job:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
+}
+
+.bounce{
+	animation: bounceIn 1s 2s ease 1;
+}
+
+
+@keyframes rotat{
+	0%{
+		transform: rotate(0);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes bounceIn{
+  0%{
+    opacity: 0;
+    transform: scale(0.3) translate3d(0,0,0);
+  }
+  50%{
+    opacity: 0.9;
+    transform: scale(1.1);
+  }
+  80%{
+    opacity: 1;
+    transform: scale(0.89);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translate3d(0,0,0);
+  }
+}
+
+@keyframes pulse{
+	0%{transform: scale(1)}
+	50%{transform: scale(1.1)}
+	100%{transform: scale(1)}
+}
+
+footer{
+	display: flex;
+	background-color:black;
+	color:white;
+	justify-content: space-around;
+}
+.bio{
+	opacity: 0;
+	max-height: 0;
+	transition: all 1s ease;
+}
+
+.plus{
+	opacity: 0;
+	transition: all 1s ease;
+
+}
+.show{
+	opacity: 1;
+	font-size: 150%;
+	max-height: 500px;
+}
+
+
+
+
+
